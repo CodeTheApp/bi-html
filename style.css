@@ -23,14 +23,17 @@ img {
   --header-height: 4.5rem;
 
   /*color */
-  --hue: 159;
+  --hue: 36;
   /*HSL color mode */
-  --base-color: hsl(var(--hue) 26% 57%);
+  --base-color: hsl(var(--hue) 100% 50%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
+
   --title-color: hsl(var(--hue) 41% 10%);
+  
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
+  
   --body-color: hsl(0 0% 98%);
 
   /* fonts */
@@ -120,6 +123,7 @@ body {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
+  padding: 1rem;
 
   position: fixed;
   top: 0;
@@ -137,7 +141,7 @@ body {
 /*==== LOGO ======================== */
 .logo {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 16rem;
   height: 6.3rem;
   padding: 1.2rem;
@@ -309,6 +313,9 @@ nav.show div.icon-close {
 
 #about .image {
   position: relative;
+  height: 25rem;
+  width: 20rem;
+
 }
 
 #about .image::before {
@@ -338,6 +345,8 @@ nav.show div.icon-close {
 
 /* ========== SERVICES =========*/
 .cards.grid {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
@@ -346,11 +355,11 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3.625rem 2rem;
+  padding: 3rem 1rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .card i {
