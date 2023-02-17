@@ -369,6 +369,10 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+.card ul li{
+  list-style-type: circle;
+}
+
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
