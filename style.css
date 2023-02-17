@@ -25,7 +25,7 @@ img {
   /*color */
   --hue: 36;
   /*HSL color mode */
-  --base-color: hsl(var(--hue) 100% 50%);
+  --base-color: hsl(var(--hue) 85% 65%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
 
@@ -355,7 +355,7 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
