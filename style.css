@@ -476,6 +476,10 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+#contact .ph-whatsapp-logo-thin {
+  color: white;
+}
+
 /* ========== FOOTER ======== */
 footer {
   background: var(--base-color);

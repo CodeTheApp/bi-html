@@ -92,11 +92,12 @@
           </div>
           <div class="text">
             <h2 class="title">Quem somos</h2>
+            <p>Entre. Sinta... A luz é sua!</p>
+            <br />
             <p>
-              Entre. Sinta... A luz é sua! Há mais de dez anos, sob o olhar
-              sensível da designer Camila de Lelis, a luz própria de cada
-              cliente é exteriorizada em ambientes que reluzem personalidade e
-              essência.
+              Há mais de dez anos, sob o olhar sensível da designer Camila de
+              Lelis, a luz própria de cada cliente é exteriorizada em ambientes
+              que reluzem personalidade e essência.
             </p>
             <br />
             <p>
@@ -260,23 +261,63 @@
               queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
             </p>
 
-            <a
-              href="https://api.whatsapp.com/send?phone=+5561983583129&text=Olá! Está disponivel?"
-              class="button"
-              target="_blank"
-              ><i class="ph-whatsapp-logo"></i> Entrar em contato</a
-            >
-          </div>
+            <form id="my-form">
+              <fieldset>
+                <div class="fieldset-wrapper">
+                       
+                 <div class="col-2">
+                  <div class="input-wrapper">
+                    <label for="event-name"
+                      >Nome</label
+                    >
+                    <input type="text" id="event-name" required/>
+                  
+                  </div>
 
-          <div class="links">
-            <ul class="grid">
-              <li>
-                <i class="ph-phone"></i>
-                (61) 9 8358-3129
-              </li>
-              <li><i class="ph-map-pin"></i> Brasília-DF</li>
+                  <div class="input-wrapper">
+                    <label for="event-email"
+                      >E-mail<span
+                        > (digite um email válido)</span
+                      ></label
+                    >
+                    <input type="email" id="event-email" />
+                  </div>
+                  
+                  <div class="field-news">
+                    <span>Deseja receber nossas novidades?</span>
+                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                </div>
+                <div class="field-message">
+                    <label for="event-message">Sua mensagem:</label>
+                    <textarea name="message" id="event-message" placeholder="Mensagem*" required></textarea>
+                </div>
+    
+                  <input class="button" type="submit" value="Enviar" form="my-form">
+              </fieldset>    
+              
+
+            </div>
+            
+            <div class="links">
+              <ul class="grid">
+                
+                <li>
+                  <i class="ph-phone"></i>
+                  (61) 9 8358-3129
+                </li>
+                <li><i class="ph-map-pin"></i> Brasília-DF</li>
               <li>
                 <i class="ph-envelope"></i> contato@brasiliailuminacao.com.br
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=+5561983583129&text=Olá! Está disponivel?"
+                  class="button"
+                  target="_blank"
+                  ><i class="ph-whatsapp-logo-thin"></i> Entrar em contato</a
+                >
+              
               </li>
             </ul>
           </div>
