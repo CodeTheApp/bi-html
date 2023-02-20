@@ -18,9 +18,12 @@ img {
   height: auto;
 }
 
+
 /*==== VARIABLES ============ */
 :root {
+
   --header-height: 4.5rem;
+
 
   /*color */
   --hue: 36;
@@ -48,6 +51,7 @@ img {
 /*==== BASE ============ */
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
@@ -55,6 +59,33 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+small {
+  color: #b8b7b7;
+  margin-left: 0.2rem;
+}
+
+input[type="text"], 
+input[type="email"] {
+  height: 3.6rem;
+  border: 1px solid rgb(228, 143, 32);
+
+  border-radius: .5rem;
+  
+  font-size: .8rem;
+  line-height: 1.1rem;
+  color: #858488;
+  padding: 0.5rem;
+}
+
+input[type="radio"]{
+  accent-color: rgb(228, 143, 32);
 }
 
 .title {
@@ -453,8 +484,8 @@ nav.show div.icon-close {
   gap: 4rem;
 }
 
-#contact .text p {
-  margin-bottom: 2rem;
+#contact .text > p {
+  margin-bottom: 1.5rem;
 }
 
 #contact .button i,
@@ -479,6 +510,67 @@ nav.show div.icon-close {
 #contact .ph-whatsapp-logo-thin {
   color: white;
 }
+
+/* ========= Formulário ============*/
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.field-news p.news-text {
+  margin-bottom: 1.5rem;
+}
+
+.radio-news {
+  display: flex;
+}
+
+.radio-news label {
+  margin-left: 0.3rem;
+}
+
+
+input#nao{
+    margin-left: 2rem;
+}
+
+.field-message textarea {
+  width: 100%;
+  
+  border: 1px solid rgb(228, 143, 32);
+  border-radius: .5rem;
+  
+  font-size: .8rem;
+  line-height: 1.1rem;
+  color: #858488;
+  padding: 0.5rem;
+  height: 8rem;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: rgb(228, 143, 32);
+    height: 3rem;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 10rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 /* ========== FOOTER ======== */
 footer {

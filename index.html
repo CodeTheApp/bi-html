@@ -261,11 +261,9 @@
               queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
             </p>
 
-            <form id="my-form">
+            <form id="bi-form">
               <fieldset>
-                <div class="fieldset-wrapper">
-                       
-                 <div class="col-2">
+                <div class="fieldset-wrapper">     
                   <div class="input-wrapper">
                     <label for="event-name"
                       >Nome</label
@@ -276,25 +274,29 @@
 
                   <div class="input-wrapper">
                     <label for="event-email"
-                      >E-mail<span
-                        > (digite um email válido)</span
+                      >E-mail<small
+                        > (digite um e-mail válido)</small
                       ></label
                     >
                     <input type="email" id="event-email" />
                   </div>
                   
                   <div class="field-news">
-                    <span>Deseja receber nossas novidades?</span>
-                    <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
-                    <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
-                </div>
+                    <p class="news-text">Deseja receber nossas novidades?</p>
+                    <div class="radio-news">
+                      <input type="radio" name="novidades" id="sim" value="sim" checked  /><label for="sim"> Sim</label>              
+                      <input type="radio" name="novidades" id="nao" value="nao" /><label for="nao"> Não</label>
+                    </div>
+                
+                  </div>
                 <div class="field-message">
                     <label for="event-message">Sua mensagem:</label>
-                    <textarea name="message" id="event-message" placeholder="Mensagem*" required></textarea>
+                    <textarea name="message" id="event-message" placeholder="Olá, gostaria de mais informações..." required></textarea>
                 </div>
     
-                  <input class="button" type="submit" value="Enviar" form="my-form">
-              </fieldset>    
+                  <input class="button" type="submit" value="Enviar" form="my-form" />
+              </fieldset> 
+              </form>   
               
 
             </div>
