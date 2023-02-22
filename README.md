@@ -1,5 +1,5 @@
 <div align="center">
-![Brasília Iluminação](/assets/logo.png)
+ <img src="assets/logo.png" alt="Brasília Iluminação Logo" >
 </div>
 
 # Brasília Iluminação - LP v0
