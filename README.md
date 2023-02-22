@@ -1,4 +1,4 @@
-<div align="center" width="350" style="backgroundColor: '#fff'">
+<div align="center" width="350" style="backgroundColor:white">
  <img src="assets/logo.png" alt="Brasília Iluminação Logo"  width="350" title="Brasília Iluminação">
 </div>
 
