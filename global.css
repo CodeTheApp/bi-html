@@ -20,7 +20,7 @@ img {
 
 /*==== VARIABLES ============ */
 :root {
-  --header-height: 4.5rem;
+  --header-height: 5.6rem;
 
   /*color */
   --hue: 36;
@@ -38,8 +38,9 @@ img {
   --body-color: hsl(0 0% 98%);
 
   /* fonts */
-  --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
+  --title-font-size: 2.25rem;
+  --subtitle-font-size: 1.4rem;
+
 
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
@@ -52,14 +53,18 @@ html {
 }
 
 body {
-  font: 400 1rem var(--body-font);
+  font: 400 1.6rem var(--body-font);
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
+i, li i {
+  font-size: 24px;
+}
+
 label {
-  font-size: 1rem;
+  font-size: var(--subtitle-font-size);
   line-height: 1.7rem;
 }
 
@@ -88,18 +93,23 @@ input[type='radio'] {
 .title {
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
+  line-height: 3.5rem;
   -webkit-font-smoothing: auto;
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
 .button {
   background-color: rgb(228, 143, 32);
   color: var(--text-color-light);
-  height: 3.5rem;
+  height: 4rem;
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem var(--body-font);
+  font: 500 1.6rem var(--body-font);
   transition: background 0.3s;
 }
 
@@ -144,15 +154,12 @@ input[type='radio'] {
   margin-bottom: 1rem;
 }
 
-.section .subtitle {
-  font-size: var(--subtitle-font-size);
-}
-
 #header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
-  padding: 1rem;
+  padding: 1.6rem;
+
 
   position: fixed;
   top: 0;
@@ -164,19 +171,13 @@ input[type='radio'] {
 }
 
 #header.scroll {
-  /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15); */
   box-shadow: 0px 0px 12px hsl(36, 90%, 92%);
 }
 
 /*==== LOGO ======================== */
 .logo {
-  display: flex;
-  /* border: 1px solid red; */
-  width: 16rem;
-  height: 6.3rem;
-  padding: 1.2rem;
-  /* font: 700 1.31rem var(--title-font);
-  color: var(--title-color); */
+  width: auto;
+  height: 100%;
 }
 
 /*==== NAVIGATION ======================== */
@@ -269,7 +270,7 @@ nav .icon-close {
 
   position: absolute;
   top: -2.5rem;
-  right: 2.5rem;
+  right: 3rem;
 
   transition: 0.2s;
 }
@@ -277,7 +278,7 @@ nav .icon-close {
 nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
-  top: 2.5rem;
+  top: 3rem;
 }
 
 /* ========== back to top ======== */
@@ -308,7 +309,6 @@ nav.show div.icon-close {
   transform: translateY(0);
 }
 
-
 /* ==== HOME =============*/
 /* ==== ABOUT =============*/
 /* ==== SERVICES =============*/
@@ -316,7 +316,6 @@ nav.show div.icon-close {
 /* ========== CONTACT======== */
 /* ========= Formulário ============*/
 /* ========== FOOTER ======== */
-
 
 /* ========== MEDIA QUERIES ======== */
 /* extra large devices: 1200 > */
@@ -338,9 +337,7 @@ nav.show div.icon-close {
     margin-left: auto;
     margin-right: auto;
   }
-  .button {
-    height: 3.125rem;
-  }
+
 
   /* navigation */
 
@@ -356,7 +353,7 @@ nav.show div.icon-close {
   }
 
   nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
+    font: 400 1.6rem var(--body-font);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -378,12 +375,12 @@ nav.show div.icon-close {
   /* SERVICES */
   /* TESTIMONIALS */
   /* CONTACT */
-  /* large devices: 1023 > */
-  /* large devices: 992 > */
+  
+  /* large devices: < 992  */
   @media (min-width: 992px) {
     :root {
-      --title-font-size: 2.25rem;
-      --subtitle-font-size: 1.125rem;
+      --title-font-size: 3rem;
+      --subtitle-font-size: 1.6rem;
     }
   }
 }

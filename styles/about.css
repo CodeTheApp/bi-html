@@ -8,7 +8,9 @@
 
 #about .image {
   position: relative;
-  max-width: 30rem;
+  place-items: center;
+  margin: 0 auto;
+  max-width: 50rem;
 }
 
 #about .image::before {
@@ -41,5 +43,11 @@
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
+  max-width: 100rem;
+    
+  }
+
+  #about .image {
+    max-width: 35rem;
   }
 }

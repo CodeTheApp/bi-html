@@ -6,8 +6,8 @@ footer.section {
   padding: 3rem;
 }
 
-footer .logo {
-  display: inline-block;
+footer .brand img {
+  max-width: 20rem;
   margin-bottom: 1rem;
 }
 
@@ -47,7 +47,7 @@ footer .social a:hover {
     justify-content: space-between;
   }
 
-  footer .logo {
+  /* footer .logo {
     font-size: 2.25rem;
-  }
+  } */
 }
