@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="width: 200px">
  <img src="assets/logo.png" alt="Brasília Iluminação Logo" >
 </div>
 
