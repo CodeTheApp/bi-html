@@ -65,8 +65,17 @@
   }
 
   #home .text {
-    order: 0;
+    /* order: 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    justify-content: center;
     max-width: 24rem;
     text-align: left;
   }
+
+  #home .text .button{
+    width: fit-content;
+  }
+
 }

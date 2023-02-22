@@ -63,6 +63,26 @@ body *::selection {
   background-color: rgb(228, 143, 32);
 }
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(228, 143, 32, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(228, 143, 32);
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(228, 143, 32, 0.5);
+}
+
+
 i,
 li i {
   font-size: 24px;
@@ -150,7 +170,7 @@ input[type='radio'] {
 }
 
 .section {
-  padding: calc(5rem + var(--header-height)) 0;
+  padding: calc(2rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -364,11 +384,18 @@ nav.show div.icon-close {
     margin-top: var(--header-height);
   }
 
+  .section {
+    padding: calc(5rem + var(--header-height)) 0;
+  }
+
   /* large devices: < 992  */
   @media (min-width: 992px) {
     :root {
       --title-font-size: 3rem;
       --subtitle-font-size: 1.6rem;
     }
+
+
+    
   }
 }
