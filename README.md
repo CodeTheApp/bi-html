@@ -1,5 +1,5 @@
 <div align="center" >
- <img src="assets/logo.png" alt="Brasília Iluminação Logo"  width="350" title="BI LOGO">
+ <img src="assets/logo.png" alt="Brasília Iluminação Logo"  width="350" title="Brasília Iluminação">
 </div>
 
 # Brasília Iluminação - LP v0
