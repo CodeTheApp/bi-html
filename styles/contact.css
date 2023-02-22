@@ -2,6 +2,10 @@
   gap: 4rem;
 }
 
+#contact .contact-form .subtitle {
+  margin-bottom: 1rem;
+}
+
 #contact .text > p {
   margin-bottom: 1.5rem;
 }
@@ -46,7 +50,7 @@ fieldset {
 }
 
 .field-news p.news-text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .radio-news {
@@ -55,10 +59,16 @@ fieldset {
 
 .radio-news label {
   margin-left: 0.3rem;
+  margin-bottom: 0;
 }
 
 input#nao {
   margin-left: 2rem;
+}
+
+.field-message {
+  display: flex;
+  flex-direction: column;
 }
 
 .field-message textarea {
@@ -67,22 +77,22 @@ input#nao {
   border: 1px solid rgb(228, 143, 32);
   border-radius: 0.5rem;
 
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1.1rem;
   color: #858488;
   padding: 0.5rem;
-  height: 8rem;
+  min-height: 8rem;
+  resize: none;
 }
 
 input[type='submit'] {
   display: block;
   background-color: rgb(228, 143, 32);
-  height: 3rem;
+  height: 4rem;
   border: none;
   outline: 0;
   cursor: pointer;
   width: 10rem;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -92,7 +102,8 @@ input[type='submit'] {
     align-items: center;
   }
 
-  #contact .text {
-    max-width: 25rem;
+  #contact .contact-form {
+    max-width: 50rem;
+    margin: 0 auto;
   }
 }

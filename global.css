@@ -41,7 +41,6 @@ img {
   --title-font-size: 2.25rem;
   --subtitle-font-size: 1.4rem;
 
-
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
 }
@@ -59,13 +58,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-i, li i {
+body *::selection {
+  color: #fff;
+  background-color: rgb(228, 143, 32);
+}
+
+i,
+li i {
   font-size: 24px;
 }
 
 label {
   font-size: var(--subtitle-font-size);
   line-height: 1.7rem;
+  margin-bottom: 0.8rem;
 }
 
 small {
@@ -79,9 +85,6 @@ input[type='email'] {
   border: 1px solid rgb(228, 143, 32);
 
   border-radius: 0.5rem;
-
-  font-size: 0.8rem;
-  line-height: 1.1rem;
   color: #858488;
   padding: 0.5rem;
 }
@@ -159,7 +162,6 @@ input[type='radio'] {
   margin-bottom: 2rem;
   display: flex;
   padding: 1.6rem;
-
 
   position: fixed;
   top: 0;
@@ -309,14 +311,6 @@ nav.show div.icon-close {
   transform: translateY(0);
 }
 
-/* ==== HOME =============*/
-/* ==== ABOUT =============*/
-/* ==== SERVICES =============*/
-/* ========== TESTIMONIALS ======== */
-/* ========== CONTACT======== */
-/* ========= Formulário ============*/
-/* ========== FOOTER ======== */
-
 /* ========== MEDIA QUERIES ======== */
 /* extra large devices: 1200 > */
 /* reusable classes */
@@ -337,7 +331,6 @@ nav.show div.icon-close {
     margin-left: auto;
     margin-right: auto;
   }
-
 
   /* navigation */
 
@@ -370,12 +363,7 @@ nav.show div.icon-close {
   main {
     margin-top: var(--header-height);
   }
-  /* home */
-  /* about */
-  /* SERVICES */
-  /* TESTIMONIALS */
-  /* CONTACT */
-  
+
   /* large devices: < 992  */
   @media (min-width: 992px) {
     :root {
