@@ -280,139 +280,6 @@ nav.show div.icon-close {
   top: 2.5rem;
 }
 
-/* ==== HOME =============*/
-/* ==== ABOUT =============*/
-/* ==== SERVICES =============*/
-
-/* ========== TESTIMONIALS ======== */
-
-/* ========== CONTACT======== */
-#contact .grid {
-  gap: 4rem;
-}
-
-#contact .text > p {
-  margin-bottom: 1.5rem;
-}
-
-#contact .button i,
-#contact ul li i {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
-}
-
-#contact ul.grid {
-  gap: 2rem;
-}
-
-#contact ul li {
-  display: flex;
-  align-items: center;
-}
-
-#contact ul li i {
-  color: var(--base-color);
-}
-
-#contact .ph-whatsapp-logo-thin {
-  color: white;
-}
-
-/* ========= Formulário ============*/
-fieldset {
-  border: none;
-}
-
-.fieldset-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.input-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.field-news p.news-text {
-  margin-bottom: 1.5rem;
-}
-
-.radio-news {
-  display: flex;
-}
-
-.radio-news label {
-  margin-left: 0.3rem;
-}
-
-input#nao {
-  margin-left: 2rem;
-}
-
-.field-message textarea {
-  width: 100%;
-
-  border: 1px solid rgb(228, 143, 32);
-  border-radius: 0.5rem;
-
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  color: #858488;
-  padding: 0.5rem;
-  height: 8rem;
-}
-
-input[type='submit'] {
-  display: block;
-  background-color: rgb(228, 143, 32);
-  height: 3rem;
-  border: none;
-  outline: 0;
-  cursor: pointer;
-  width: 10rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* ========== FOOTER ======== */
-footer {
-  background: var(--base-color);
-}
-
-footer.section {
-  padding: 3rem;
-}
-
-footer .logo {
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-footer .brand p {
-  color: var(--text-color-light);
-  margin-bottom: 0.75rem;
-}
-
-footer i {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-}
-
-footer .social {
-  grid-auto-flow: column;
-  width: fit-content;
-}
-
-footer .social a {
-  transition: 0.3s;
-  display: inline-block;
-}
-
-footer .social a:hover {
-  transform: translateY(-8px);
-}
-
 /* ========== back to top ======== */
 .back-to-top {
   background: var(--base-color);
@@ -440,6 +307,16 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* ==== HOME =============*/
+/* ==== ABOUT =============*/
+/* ==== SERVICES =============*/
+/* ========== TESTIMONIALS ======== */
+/* ========== CONTACT======== */
+/* ========= Formulário ============*/
+/* ========== FOOTER ======== */
+
 
 /* ========== MEDIA QUERIES ======== */
 /* extra large devices: 1200 > */
@@ -501,7 +378,6 @@ footer .social a:hover {
   /* SERVICES */
   /* TESTIMONIALS */
   /* CONTACT */
-
   /* large devices: 1023 > */
   /* large devices: 992 > */
   @media (min-width: 992px) {
