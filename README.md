@@ -1,3 +1,7 @@
+<div align="center">
+![Brasília Iluminação](/assets/logo.png)
+</div>
+
 # Brasília Iluminação - LP v0
 
 ---
