@@ -31,6 +31,43 @@ function changeHeaderWhenScroll() {
   }
 }
 
+/* controle de images na home */
+let index = 0
+
+function changeImage() {
+  const image = document.querySelector('#img')
+  const imageSrc = image.getAttribute('src')
+
+  const imgArray = [
+    'assets/projeto1.jpg',
+    'assets/projeto2.jpg',
+    'assets/projeto4.jpg',
+    'assets/projeto3.jpg'
+  ]
+
+  if (index <= 3) {
+    image.setAttribute('src', imgArray[index])
+    image.setAttribute('alt', `imagem ${index}`)
+    image.classList.add('fade')
+    setTimeout(() => {
+      image.classList.remove('fade')
+    }, 1000)
+  } else {
+    index = 0
+    image.setAttribute('src', imgArray[0])
+    image.setAttribute('alt', `imagem 0`)
+    image.classList.add('fade')
+    setTimeout(() => {
+      image.classList.remove('fade')
+    }, 1000)
+  }
+  index++
+
+  setTimeout(changeImage, 8000)
+}
+
+window.onload = changeImage()
+
 /* Testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
