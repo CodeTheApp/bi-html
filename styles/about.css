@@ -50,6 +50,11 @@
     max-width: 35rem;
   }
 
+  #about .image img,
+  #about .image::before {
+  border-radius: 1rem;
+}
+
   #about .container .text{
     height: fit-content;
   }

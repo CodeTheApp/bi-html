@@ -34,6 +34,19 @@
   border-radius: 0.25rem;
 }
 
+.fade {
+  animation: filterBrighness 0.5s ease-in-out;
+}
+
+@keyframes filterBrighness {
+  0% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
 #home .text {
   min-width: 28rem;
   margin-left: 1.5rem;
@@ -62,7 +75,13 @@
 
   #home .image {
     order: 1;
+    height: 50rem;
   }
+
+  #home .image img,
+  #home .image::before {
+  border-radius: 1rem;
+}
 
   #home .text {
     /* order: 0; */
