@@ -120,6 +120,13 @@ input[type='radio'] {
   -webkit-font-smoothing: auto;
 }
 
+svg {
+  color: rgb(228, 143, 32);
+
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
 .subtitle {
   font-size: var(--subtitle-font-size);
 }
@@ -329,6 +336,10 @@ nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.back-to-top.show svg {
+  margin-left: 0.5rem;
 }
 
 /* ========== MEDIA QUERIES ======== */

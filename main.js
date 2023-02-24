@@ -96,11 +96,11 @@ sliders.forEach((slider) => {
   prevBtn.classList.add('slider-prev');
   prevBtn.setAttribute('aria-label', 'Slide anterior');
   prevBtn.innerHTML =
-    '<span aria-hidden="true"><i class="ph-caret-left"></i></span>';
+    '<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="160 208 80 128 160 48" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline></svg></span>';
   nextBtn.classList.add('slider-next');
   nextBtn.setAttribute('aria-label', 'Próximo slide');
   nextBtn.innerHTML =
-    '<span aria-hidden="true"><i class="ph-caret-right"></i></span>';
+    '<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="96 48 176 128 96 208" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline></svg></span>';
 
   slider.appendChild(prevBtn);
   slider.appendChild(nextBtn);
