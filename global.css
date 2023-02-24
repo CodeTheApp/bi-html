@@ -49,6 +49,7 @@ img {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
@@ -81,7 +82,6 @@ body *::selection {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(228, 143, 32, 0.5);
 }
-
 
 i,
 li i {
@@ -394,8 +394,5 @@ nav.show div.icon-close {
       --title-font-size: 3rem;
       --subtitle-font-size: 1.6rem;
     }
-
-
-    
   }
 }
