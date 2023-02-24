@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/toast.css" />
     <link rel="stylesheet" href="global.css" />
 
     <!-- FONTS-->
@@ -447,19 +448,39 @@
               queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
             </p>
 
-            <form id="bi-form">
+            <form
+              id="bi-form"
+              action="https://formsubmit.co/isaacsvianna@gmail.com"
+              method="POST"
+            >
               <fieldset>
                 <div class="fieldset-wrapper">
                   <div class="input-wrapper">
                     <label for="event-name">Nome</label>
-                    <input type="text" id="event-name" required />
+                    <input type="text" id="event-name" name="name" required />
                   </div>
-
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nova Inscrição!"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://127.0.0.1:5500/index.html#contact"
+                  />
                   <div class="input-wrapper">
                     <label for="event-email"
                       >E-mail<small> (digite um e-mail válido)</small></label
                     >
-                    <input type="email" id="event-email" />
+                    <input
+                      type="email"
+                      id="event-email"
+                      name="email"
+                      required
+                    />
                   </div>
 
                   <div class="field-news">
@@ -467,14 +488,14 @@
                     <div class="radio-news">
                       <input
                         type="radio"
-                        name="novidades"
+                        name="news"
                         id="sim"
                         value="sim"
                         checked
                       /><label for="sim"> Sim</label>
                       <input
                         type="radio"
-                        name="novidades"
+                        name="news"
                         id="nao"
                         value="nao"
                       /><label for="nao"> Não</label>
@@ -485,6 +506,7 @@
                     <textarea
                       name="message"
                       id="event-message"
+                      name="message"
                       placeholder="Olá, gostaria de mais informações..."
                       required
                     ></textarea>
@@ -494,7 +516,7 @@
                     class="button"
                     type="submit"
                     value="Enviar"
-                    form="my-form"
+                    form="bi-form"
                   />
                 </div>
               </fieldset>
@@ -518,6 +540,9 @@
                   target="_blank"
                   ><i class="ph-whatsapp-logo-thin"></i> Entrar em contato</a
                 >
+              </li>
+              <li>
+                <button class="button" onclick="myFunction()">Teste</button>
               </li>
             </ul>
           </div>
@@ -570,6 +595,10 @@
       </div>
     </div>
 
+    <!-- TOAST -->
+    <div id="snackbar">E-mail enviado!</div>
+
+    <!-- SCROLL UP -->
     <a href="#home" class="back-to-top"><i class="ph-arrow-up"></i></a>
 
     <!-- SWIPER -->
@@ -581,5 +610,6 @@
     <!-- main.js -->
     <script src="main.js"></script>
     <script src="modal.js"></script>
+    <script src="toast.js"></script>
   </body>
 </html>
