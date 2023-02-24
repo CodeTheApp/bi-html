@@ -556,12 +556,17 @@
     </footer>
 
     <!-- MODAL -->
-    <div class="modal">
-      <span class="close">&times;</span>
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Fotos em tela cheia"
+    >
+      <span class="close" aria-label="Fechar modal">&times;</span>
       <div class="modal-content">
-        <img class="modal-image" />
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+        <img class="modal-image" aria-describedby="modal-description" />
+        <button class="prev" aria-label="Imagem anterior">&#10094;</button>
+        <button class="next" aria-label="Próxima imagem">&#10095;</button>
       </div>
     </div>
 
