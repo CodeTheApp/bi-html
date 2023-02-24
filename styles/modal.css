@@ -8,7 +8,8 @@
   height: 100%;
   overflow: hidden;
   overflow-x: auto;
-  background: rgba(228, 143, 32, 0.9) no-repeat center center;
+  background: rgba(0, 0, 0, 0.8) no-repeat center center;
+  /* background: rgba(228, 143, 32, 0.9) no-repeat center center; */
   backdrop-filter: blur(2px);
 }
 
