@@ -199,6 +199,11 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
+#header a {
+  height: 100%;
+  cursor: pointer;
+}
+
 #header.scroll {
   box-shadow: 0px 0px 12px hsl(36, 90%, 92%);
 }
