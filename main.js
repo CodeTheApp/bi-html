@@ -159,7 +159,8 @@ scrollReveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
-  #testimonials header, #testimonials .testimonials,
+  #testimonials header, #testimonials .testimonials, 
+  #gallery .gallery, #gallery .gallery .project,
   #contact .text, #contact .links,
   footer .brand, footer .social
   `,
