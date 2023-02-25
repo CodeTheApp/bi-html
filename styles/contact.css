@@ -1,3 +1,7 @@
+#contact {
+  background: white;
+}
+
 #contact .grid {
   gap: 4rem;
 }
@@ -79,7 +83,7 @@ input#nao {
 
   font-size: 1.2rem;
   line-height: 1.1rem;
-  color: #858488;
+  color: #090909;
   padding: 0.5rem;
   min-height: 8rem;
   resize: none;

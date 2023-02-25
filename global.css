@@ -32,7 +32,7 @@ img {
 
   --title-color: hsl(var(--hue) 41% 10%);
 
-  --text-color: hsl(0 0% 46%);
+  --text-color: hsl(0 0% 35%);
   --text-color-light: hsl(0 0% 98%);
 
   --body-color: hsl(0 0% 98%);
@@ -49,6 +49,7 @@ img {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
@@ -82,7 +83,6 @@ body *::selection {
   background: rgba(228, 143, 32, 0.5);
 }
 
-
 i,
 li i {
   font-size: 24px;
@@ -95,7 +95,7 @@ label {
 }
 
 small {
-  color: #b8b7b7;
+  color: #676767;
   margin-left: 0.2rem;
 }
 
@@ -105,7 +105,7 @@ input[type='email'] {
   border: 1px solid rgb(228, 143, 32);
 
   border-radius: 0.5rem;
-  color: #858488;
+  color: #080808;
   padding: 0.5rem;
 }
 
@@ -120,19 +120,26 @@ input[type='radio'] {
   -webkit-font-smoothing: auto;
 }
 
+svg {
+  color: rgb(228, 143, 32);
+
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
 .subtitle {
   font-size: var(--subtitle-font-size);
 }
 
 .button {
   background-color: rgb(228, 143, 32);
-  color: var(--text-color-light);
+  color: #fff;
   height: 4rem;
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1.6rem var(--body-font);
+  font: 700 1.6rem var(--body-font);
   transition: background 0.3s;
 }
 
@@ -190,6 +197,11 @@ input[type='radio'] {
   background-color: var(--body-color);
   width: 100%;
   transition: all 0.3s ease-in-out;
+}
+
+#header a {
+  height: 100%;
+  cursor: pointer;
 }
 
 #header.scroll {
@@ -331,6 +343,10 @@ nav.show div.icon-close {
   transform: translateY(0);
 }
 
+.back-to-top.show svg {
+  margin-left: 0.5rem;
+}
+
 /* ========== MEDIA QUERIES ======== */
 /* extra large devices: 1200 > */
 /* reusable classes */
@@ -394,8 +410,5 @@ nav.show div.icon-close {
       --title-font-size: 3rem;
       --subtitle-font-size: 1.6rem;
     }
-
-
-    
   }
 }
