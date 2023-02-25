@@ -69,8 +69,6 @@
   height: 40px;
   background-color: var(--base-color);
   border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
   cursor: pointer;
   border: none;
   box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
@@ -79,9 +77,9 @@
 .slider-prev span,
 .slider-next span {
   display: flex;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
+}
+.slider-next span {
+  margin-left: 5px;
 }
 
 .slider-prev {

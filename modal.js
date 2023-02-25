@@ -30,6 +30,26 @@ images.forEach((image, index) => {
   });
 });
 
+// navegar pelas imagens com as setas do teclado (direita e esquerda)
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+      currentImage = images[currentIndex];
+      modalImage.src = currentImage.src;
+    }
+  } else if (event.key === 'ArrowLeft') {
+    if (currentIndex > 0) {
+      currentIndex--;
+      currentImage = images[currentIndex];
+      modalImage.src = currentImage.src;
+    }
+  } else if (event.key === 'Escape') {
+    html.style.overflow = 'auto';
+    modal.style.display = 'none';
+  }
+});
+
 // Fecha o modal quando o botão de fechar for clicado
 const closeButton = document.querySelector('.close');
 closeButton.addEventListener('click', () => {
