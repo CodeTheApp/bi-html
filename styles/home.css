@@ -1,37 +1,49 @@
 #home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+  position: relative;
 
-#home .container {
-  margin: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 #home .image {
   position: relative;
-  max-width: 80rem;
-}
-
-#home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background-color: var(--base-color-second);
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 #home .image img {
-  position: relative;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-#home .image img,
-#home .image::before {
-  border-radius: 0.25rem;
+#home .pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: fit-content;
+  padding: 1rem;
+  z-index: 10;
+}
+
+#home .pagination .pagination-item {
+  width: 40px;
+  height: 6px;
+  border-radius: 0.2rem;
+  background-color: #ffffff89;
+  transition: all 0.3s ease-in-out;
+}
+
+#home .pagination .pagination-item.active {
+  background-color: #ffffff;
 }
 
 .fade {
@@ -47,27 +59,8 @@
   }
 }
 
-#home .text {
-  min-width: 28rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  text-align: center;
-}
-
-#home .text h2 {
-  margin-bottom: 1rem;
-}
-
-#home .text p {
-  margin-bottom: 2rem;
-  /* font-size: 1.6rem; */
-}
-.image::before {
-  border-radius: 0.25rem;
-}
-
 @media (min-width: 1200px) {
-  #home .container {
+  #home {
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
@@ -75,25 +68,9 @@
 
   #home .image {
     order: 1;
-    height: 50rem;
   }
 
-  #home .image img,
-  #home .image::before {
-    border-radius: 1rem;
-  }
-
-  #home .text {
-    /* order: 0; */
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    justify-content: center;
-    max-width: 24rem;
-    text-align: left;
-  }
-
-  #home .text .button {
-    width: fit-content;
+  #home .pagination .pagination-item {
+    width: 80px;
   }
 }
