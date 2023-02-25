@@ -1,9 +1,10 @@
 name: GitHub Actions Dev
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
-  pull-request:
-    types: [closed]
-    branch: ["dev"]
+ pull_request:
+    types: [merged]
+    branches:
+      - dev
     
 jobs:
   Explore-GitHub-Actions:
