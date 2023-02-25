@@ -31,24 +31,47 @@ function changeHeaderWhenScroll() {
   }
 }
 
+// cria uma div com o mesmo numero de elementos que a imgArray para servir como paginacao
+const div = document.createElement('div');
+const sectionHome = document.querySelector('#home');
+
+div.classList.add('pagination');
+sectionHome.appendChild(div);
+
 /* controle de images na home */
 let index = 0;
 
+// array das imagens que vao ser trocadas
+const imgArray = [
+  'assets/projeto1.jpg',
+  'assets/projeto2.jpg',
+  'assets/projeto4.jpg',
+  'assets/projeto3.jpg',
+];
+// cria um span para cada elemento da imgArray
+for (let i = 0; i < imgArray.length; i++) {
+  const span = document.createElement('span');
+  span.classList.add('pagination-item');
+  div.appendChild(span);
+}
+
+// adiciona a classe active no item da paginacao que corresponde a imagem que esta sendo exibida
+function setPaginationACtive(paginationItems, index) {
+  paginationItems.forEach((item) => {
+    item.classList.remove('active');
+  });
+  paginationItems[index].classList.add('active');
+}
+
 function changeImage() {
   const image = document.querySelector('#img');
-  const imageSrc = image.getAttribute('src');
 
-  const imgArray = [
-    'assets/projeto1.jpg',
-    'assets/projeto2.jpg',
-    'assets/projeto4.jpg',
-    'assets/projeto3.jpg',
-  ];
-
+  const paginationItem = document.querySelectorAll('.pagination-item');
   if (index <= 3) {
     image.setAttribute('src', imgArray[index]);
     image.setAttribute('alt', `imagem ${index}`);
     image.classList.add('fade');
+    setPaginationACtive(paginationItem, index);
     setTimeout(() => {
       image.classList.remove('fade');
     }, 1000);
@@ -57,10 +80,12 @@ function changeImage() {
     image.setAttribute('src', imgArray[0]);
     image.setAttribute('alt', `imagem 0`);
     image.classList.add('fade');
+    setPaginationACtive(paginationItem, index);
     setTimeout(() => {
       image.classList.remove('fade');
     }, 1000);
   }
+
   index++;
 
   setTimeout(changeImage, 8000);
