@@ -17,7 +17,7 @@
   content: '';
   height: 100%;
   width: 100%;
-  background: #D1D6D0;
+  background: var(--base-color);
   position: absolute;
   top: -8.3%;
   left: -33%;
@@ -51,14 +51,14 @@
 
   #about .image img,
   #about .image::before {
-  border-radius: 1rem;
-}
+    border-radius: 1rem;
+  }
 
-  #about .container .text{
+  #about .container .text {
     height: fit-content;
   }
 
   #about .container .text .title {
-    margin-bottom: 2.5rem;    
+    margin-bottom: 2.5rem;
   }
 }

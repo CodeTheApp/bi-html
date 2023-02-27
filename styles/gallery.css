@@ -31,7 +31,7 @@
   height: 80%;
   border-radius: 0.3rem;
   content: '';
-  background-color: #D1D6D0;
+  background-color: var(--base-color);
   z-index: -1;
 }
 
@@ -44,11 +44,9 @@
   max-width: 100%;
   gap: 10px;
   flex-wrap: no-wrap;
-  margin: 0 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .slider::-webkit-scrollbar {
@@ -59,7 +57,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.3rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   scroll-snap-align: center;
 }
@@ -75,7 +73,7 @@
   z-index: 1;
   width: 40px;
   height: 40px;
-  background-color: rgb(52, 52, 52);
+  background-color: var(--base-color-dark);
   border-radius: 50%;
   cursor: pointer;
   border: none;

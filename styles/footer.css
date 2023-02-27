@@ -3,17 +3,17 @@ footer {
 }
 
 footer.section {
-  padding: 3rem;
+  padding: 4rem 3rem;
 }
 
 footer .brand img {
-  width: 18rem;
+  width: 20rem;
   height: auto;
   margin-bottom: 1rem;
 }
 
 footer .brand p {
-  color: rgb(52, 52, 52);
+  color: var(--base-color-dark);
   font: normal var(--subtitle-font-size);
 }
 
@@ -33,7 +33,7 @@ footer .social a:hover {
 
 @media (min-width: 1200px) {
   footer .section {
-    padding: 3.75rem;
+    padding: 4rem 3.75rem;
   }
 
   footer .container {
