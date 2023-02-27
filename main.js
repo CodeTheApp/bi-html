@@ -69,20 +69,20 @@ function changeImage() {
 window.onload = changeImage();
 
 /* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true,
-    },
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: 1,
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+//   breakpoints: {
+//     767: {
+//       slidesPerView: 2,
+//       setWrapperSize: true,
+//     },
+//   },
+// });
 
 // Galley slides
 const sliders = document.querySelectorAll('.slider');
