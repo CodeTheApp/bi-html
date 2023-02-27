@@ -69,20 +69,20 @@ function changeImage() {
 window.onload = changeImage();
 
 /* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  mousewheel: true,
-  keyboard: true,
-  breakpoints: {
-    767: {
-      slidesPerView: 2,
-      setWrapperSize: true,
-    },
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: 1,
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+//   breakpoints: {
+//     767: {
+//       slidesPerView: 2,
+//       setWrapperSize: true,
+//     },
+//   },
+// });
 
 // Galley slides
 const sliders = document.querySelectorAll('.slider');
@@ -106,38 +106,32 @@ sliders.forEach((slider) => {
   slider.appendChild(nextBtn);
 
   function prevSlide(n) {
-    const sliderSide = slider.offsetWidth;
-    console.log(sliderSide, 'sliderSide prev');
-
     if (n > 0) {
       currentSlide--;
       slider.scrollBy({
-        left: -(sliderSide - 100),
+        left: -10,
         behavior: 'smooth',
       });
     } else {
       currentSlide = slides.length - 1;
       slider.scrollBy({
-        left: -(sliderSide * n),
+        left: -(10 * n),
         behavior: 'smooth',
       });
     }
   }
 
   function nextSlide(n) {
-    const sliderSide = slider.offsetWidth;
-    console.log(sliderSide, 'sliderSide next');
-
     if (n < slides.length - 1) {
       currentSlide++;
       slider.scrollBy({
-        left: sliderSide - 100,
+        left: 10,
         behavior: 'smooth',
       });
     } else {
       currentSlide = 0;
       slider.scrollBy({
-        left: sliderSide * n,
+        left: 10 * n,
         behavior: 'smooth',
       });
     }

@@ -22,27 +22,24 @@ img {
 :root {
   --header-height: 5.6rem;
 
-  /*color */
-  --hue: 36;
   /*HSL color mode */
-  --base-color: hsl(var(--hue) 85% 65%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: #d1d6d0;
+  --base-color-second: #aeaeae;
+
+  --base-color-dark: #343434;
+
   /* hover button */
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color-alt: #aeaeae;
+  --title-color: #d1d6d0;
 
-  --title-color: hsl(var(--hue) 41% 10%);
-
-  --text-color: hsl(0 0% 35%);
-  --text-color-light: hsl(0 0% 98%);
-
-  --body-color: hsl(0 0% 98%);
+  --text-color: #595959;
+  --body-color: #fafafa;
 
   /* fonts */
   --title-font-size: 2.25rem;
   --subtitle-font-size: 1.4rem;
 
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'DM Sans', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
 }
 
 /*==== BASE ============ */
@@ -61,7 +58,7 @@ body {
 
 body *::selection {
   color: #fff;
-  background-color: rgb(228, 143, 32);
+  background-color: var(--base-color);
 }
 
 ::-webkit-scrollbar {
@@ -70,17 +67,17 @@ body *::selection {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(228, 143, 32, 0.2);
+  background: rgba(87, 86, 86, 0.2);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(228, 143, 32);
+  background: rgb(139, 138, 137);
   border-radius: 2rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(228, 143, 32, 0.5);
+  background: rgba(66, 64, 61, 0.5);
 }
 
 i,
@@ -102,7 +99,7 @@ small {
 input[type='text'],
 input[type='email'] {
   height: 3.6rem;
-  border: 1px solid rgb(228, 143, 32);
+  border: 1px solid rgb(133, 133, 133);
 
   border-radius: 0.5rem;
   color: #080808;
@@ -110,18 +107,18 @@ input[type='email'] {
 }
 
 input[type='radio'] {
-  accent-color: rgb(228, 143, 32);
+  accent-color: rgb(100, 100, 100);
 }
 
 .title {
-  font: 700 var(--title-font-size) var(--title-font);
-  color: var(--title-color);
+  font: 700 var(--title-font-size) var(--body-font);
+  color: var(--text-color);
   line-height: 3.5rem;
   -webkit-font-smoothing: auto;
 }
 
 svg {
-  color: rgb(228, 143, 32);
+  color: var(--base-color-dark);
 
   font-size: 1.6rem;
   margin-right: 0.5rem;
@@ -132,7 +129,7 @@ svg {
 }
 
 .button {
-  background-color: rgb(228, 143, 32);
+  background-color: var(--base-color-dark);
   color: #fff;
   height: 4rem;
   display: inline-flex;
@@ -151,8 +148,8 @@ svg {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
+    rgba(142, 145, 142, 1),
+    rgba(209, 214, 208, 0.34)
   );
 }
 
@@ -160,8 +157,8 @@ svg {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
+    rgba(209, 214, 208, 0.34),
+    rgba(142, 145, 142, 1)
   );
 }
 
@@ -205,7 +202,7 @@ svg {
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 12px hsl(36, 90%, 92%);
+  box-shadow: 0px 0px 12px var(--base-color);
 }
 
 /*==== LOGO ======================== */
@@ -232,16 +229,11 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--base-color);
-}
-
 nav ul li a::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: var(--base-color);
+  background: #ff9900;
 
   position: absolute;
   left: 0;
@@ -318,8 +310,6 @@ nav.show div.icon-close {
 /* ========== back to top ======== */
 .back-to-top {
   background: var(--base-color);
-  color: var(--text-color-light);
-
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -387,6 +377,7 @@ nav.show div.icon-close {
   }
 
   nav .menu ul li a.title.active {
+    color: var(--text-color);
     font-weight: bold;
     -webkit-font-smoothing: auto;
   }
