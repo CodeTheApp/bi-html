@@ -30,7 +30,7 @@
   height: 60%;
   border-radius: 0.3rem;
   content: '';
-  background-color: var(--base-color-second);
+  background-color: #D1D6D0;
   z-index: -1;
 }
 
@@ -67,7 +67,7 @@
   z-index: 1;
   width: 40px;
   height: 40px;
-  background-color: var(--base-color);
+  background-color: rgb(52, 52, 52);
   border-radius: 50%;
   cursor: pointer;
   border: none;

@@ -13,12 +13,8 @@ footer .brand img {
 }
 
 footer .brand p {
-  color: var(--text-color-light);
+  color: rgb(52, 52, 52);
   font: normal var(--subtitle-font-size);
-}
-
-footer i {
-  color: var(--text-color-light);
 }
 
 footer .social {
@@ -44,10 +40,5 @@ footer .social a:hover {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-between;
-  }
-
-  footer i {
-    color: var(--text-color-light);
-    font-size: var(--title-font-size);
   }
 }
