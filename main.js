@@ -42,7 +42,7 @@ function changeImage() {
     'assets/projeto1.jpg',
     'assets/projeto2.jpg',
     'assets/projeto4.jpg',
-    'assets/projeto3.jpg',
+    'assets/projeto3.jpg'
   ];
 
   if (index <= 3) {
@@ -69,25 +69,25 @@ function changeImage() {
 window.onload = changeImage();
 
 /* Testimonials carousel slider swiper */
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 1,
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   mousewheel: true,
-//   keyboard: true,
-//   breakpoints: {
-//     767: {
-//       slidesPerView: 2,
-//       setWrapperSize: true,
-//     },
-//   },
-// });
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+});
 
 // Galley slides
 const sliders = document.querySelectorAll('.slider');
 
-sliders.forEach((slider) => {
+sliders.forEach(slider => {
   const slides = slider.querySelectorAll('img');
   const prevBtn = document.createElement('button');
   const nextBtn = document.createElement('button');
@@ -110,13 +110,13 @@ sliders.forEach((slider) => {
       currentSlide--;
       slider.scrollBy({
         left: -10,
-        behavior: 'smooth',
+        behavior: 'smooth'
       });
     } else {
       currentSlide = slides.length - 1;
       slider.scrollBy({
         left: -(10 * n),
-        behavior: 'smooth',
+        behavior: 'smooth'
       });
     }
   }
@@ -126,13 +126,13 @@ sliders.forEach((slider) => {
       currentSlide++;
       slider.scrollBy({
         left: 10,
-        behavior: 'smooth',
+        behavior: 'smooth'
       });
     } else {
       currentSlide = 0;
       slider.scrollBy({
         left: 10 * n,
-        behavior: 'smooth',
+        behavior: 'smooth'
       });
     }
   }
@@ -146,7 +146,7 @@ const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '100px',
   duration: 700,
-  reset: true,
+  reset: false
 });
 
 scrollReveal.reveal(
