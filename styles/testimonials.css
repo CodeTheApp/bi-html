@@ -1,12 +1,11 @@
 #testimonials {
-  background: white;
+  background: #fff;
 }
-
-
 
 #testimonials .container {
   margin-left: 0;
   margin-right: 0;
+  
 }
 
 #testimonials header {
@@ -15,17 +14,21 @@
   margin-bottom: 0;
 }
 
+
 #testimonials blockquote {
   padding: 3rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
+  height: 100%;
+  
 }
 
 #testimonials blockquote p {
   position: relative;
+  font-size: 1.4rem;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
-  color: var(--title-color);
+  color: var(--base-color-dark);
 }
 
 #testimonials blockquote p span {
@@ -33,13 +36,14 @@
   position: absolute;
   top: -0.375rem;
   left: -1.875rem;
-  color: var(--base-color);
+  color: rgb(228, 143, 32);
 }
 
 #testimonials cite {
   display: flex;
   align-items: center;
   font-style: normal;
+  font-size: 1.2rem;
 }
 
 #testimonials cite img {
@@ -57,13 +61,14 @@
   padding: 4rem 1rem;
 }
 
+
 .swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--base-color);
+  background: var(--text-color);
 }
 
 
