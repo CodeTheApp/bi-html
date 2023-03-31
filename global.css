@@ -106,7 +106,8 @@ input[type='email'] {
   padding: 0.5rem;
 }
 
-input[type='radio'] {
+input[type='radio'],
+input[type='checkbox'] {
   accent-color: rgb(100, 100, 100);
 }
 
