@@ -122,6 +122,26 @@ input[type='submit'] {
   text-align: center;
 }
 
+.whatsapp {
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 4rem;
+  right: 5rem;
+  background-color: #25d366;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.whatsapp svg{
+  margin: 0;
+  width: 4rem;
+  height:auto;
+}
+
 @media (min-width: 1200px) {
   #contact .container {
     grid-auto-flow: column;
