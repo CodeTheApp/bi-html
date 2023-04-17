@@ -42,7 +42,7 @@ function changeImage() {
     'assets/projeto1.jpg',
     'assets/projeto2.jpg',
     'assets/projeto4.jpg',
-    'assets/projeto3.jpg'
+    'assets/projeto3.jpg',
   ];
 
   if (index <= 3) {
@@ -72,22 +72,57 @@ window.onload = changeImage();
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
   },
   mousewheel: true,
   keyboard: true,
   breakpoints: {
     767: {
       slidesPerView: 2,
-      setWrapperSize: true
-    }
-  }
+      setWrapperSize: true,
+    },
+  },
 });
 
 // Galley slides
+
+function createArray(number) {
+  let array = [];
+  for (let i = 1; i <= number; i++) {
+    array.push(i.toString().padStart(2, '0'));
+  }
+  return array;
+}
+
+const projects = {
+  bentoviana: {
+    title: 'Galeria Bento Viana',
+    description: 'Projeto de iluminação da Galeria Bento Viana',
+    directory: 'assets/projects/BENTO VIANA/',
+    imagesQtd: createArray(32),
+  },
+};
+
+const imageExtensions = ['jpg', 'jpeg', 'png']; // Extensões de imagem permitidas
+let image;
+
+projects.bentoviana.imagesQtd.forEach((number) => {
+  const file = `IMAGE${number}.jpg`; // Nome do arquivo
+  const extension = file.split('.').pop();
+
+  // Verifica se o arquivo é uma imagem
+  if (imageExtensions.includes(extension.toLowerCase())) {
+    const imagePath = `${projects.bentoviana.directory}${file}`;
+    image = document.createElement('img');
+    image.src = imagePath;
+    image.alt = `${projects.bentoviana.title} ${number}`;
+
+    document.getElementById('images-container').appendChild(image);
+  }
+});
 const sliders = document.querySelectorAll('.slider');
 
-sliders.forEach(slider => {
+sliders.forEach((slider) => {
   const slides = slider.querySelectorAll('img');
   const prevBtn = document.createElement('button');
   const nextBtn = document.createElement('button');
@@ -110,13 +145,13 @@ sliders.forEach(slider => {
       currentSlide--;
       slider.scrollBy({
         left: -10,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     } else {
       currentSlide = slides.length - 1;
       slider.scrollBy({
         left: -(10 * n),
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   }
@@ -126,13 +161,13 @@ sliders.forEach(slider => {
       currentSlide++;
       slider.scrollBy({
         left: 10,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     } else {
       currentSlide = 0;
       slider.scrollBy({
         left: 10 * n,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   }
@@ -146,7 +181,7 @@ const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '100px',
   duration: 700,
-  reset: false
+  reset: false,
 });
 
 scrollReveal.reveal(
