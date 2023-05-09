@@ -1,0 +1,104 @@
+.title-loja {
+  color: #ff9900;
+  line-height: 3.5rem;
+  -webkit-font-smoothing: auto;
+  font: 700 var(--title-font-size) var(--body-font);
+}
+
+#loja {
+  display: flex;
+  height: 34rem;
+  position: relative;
+
+  align-items: center;
+  justify-content: end;
+  background: #fff url('../assets/bg.png') center right no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0 2rem;
+}
+
+.lumi1 img,
+.lumi2 img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+}
+
+.lumi1 img {
+  left: -200px;
+  bottom: -300px;
+  height: 500px;
+}
+
+.lumi2 img {
+  left: -40px;
+  top: -20px;
+  height: 200px;
+}
+
+#loja .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2.8rem;
+  max-width: 52rem;
+  text-align: right;
+}
+
+#loja .text h1 {
+  color: var(--base-color-dark);
+  font-size: 2.8rem;
+  max-width: 36rem;
+}
+
+#loja .text a {
+  width: fit-content;
+}
+
+@media (min-width: 1200px) {
+  .title-loja {
+    font: 400 1.6rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+  #loja {
+    background-size: 75%;
+    height: 40rem;
+    justify-content: center;
+  }
+
+  .lumi1 img,
+  .lumi2 img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+  }
+
+  .lumi1 img {
+    left: -100px;
+    top: 50px;
+    height: 800px;
+  }
+
+  .lumi2 img {
+    left: 370px;
+    top: -50px;
+    height: 300px;
+  }
+
+  #loja .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.8rem;
+    max-width: 52rem;
+    text-align: center;
+  }
+
+  #loja .text h1 {
+    font-size: 3rem;
+    max-width: none;
+  }
+}
