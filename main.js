@@ -156,7 +156,7 @@ scrollReveal.reveal(
   #testimonials header, #testimonials .testimonials, 
   #gallery .gallery, #gallery .gallery .project,
   #contact .text, #contact .links,
-  footer .brand, footer .social
+  footer .brand, footer .privacy-link-container, footer .social
   `,
   { interval: 100 }
 );
