@@ -4,7 +4,7 @@
 
 # Brasília Iluminação - LP v0
 
-27/01/2026
+27/01/2026 - v0.1.0
 ---
 
 ## Sobre o projeto
